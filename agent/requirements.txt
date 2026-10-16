@@ -1,0 +1,20 @@
+# Mock mode needs NONE of these — the agent runs on the Python standard library.
+# Install a line only when you turn that integration real.
+
+# SurrealDB (agent memory)
+surrealdb>=1.0
+
+# Anchor Browser (drive via Playwright over CDP)
+playwright>=1.44
+
+# Arize / Phoenix (tracing)
+arize-phoenix-otel
+openinference-instrumentation
+opentelemetry-sdk
+opentelemetry-exporter-otlp
+
+# ElevenLabs (voice)
+elevenlabs>=1.5
+
+# Optional: LLM rationale/eval
+anthropic>=0.40

@@ -1,0 +1,17 @@
+{
+  "venue": "The Copper Still — bar & kitchen",
+  "updated": "2026-10-16",
+  "note": "current_qty below par triggers the restock agent. units are the venue's counting unit. supplier_sku matches the mock supplier page (mock-supplier.html).",
+  "items": [
+    { "id": "whiskey-rye",      "name": "Rye Whiskey 750ml",        "category": "spirits",   "unit": "bottle", "par": 12, "current_qty": 3,  "supplier_sku": "SPR-RYE-750" },
+    { "id": "gin-london",       "name": "London Dry Gin 750ml",     "category": "spirits",   "unit": "bottle", "par": 10, "current_qty": 11, "supplier_sku": "SPR-GIN-750" },
+    { "id": "vermouth-sweet",   "name": "Sweet Vermouth 1L",        "category": "spirits",   "unit": "bottle", "par": 6,  "current_qty": 1,  "supplier_sku": "SPR-VER-1L" },
+    { "id": "tonic-water",      "name": "Tonic Water 200ml",        "category": "mixers",    "unit": "bottle", "par": 48, "current_qty": 50, "supplier_sku": "MIX-TON-200" },
+    { "id": "soda-club",        "name": "Club Soda 1L",             "category": "mixers",    "unit": "bottle", "par": 24, "current_qty": 6,  "supplier_sku": "MIX-SOD-1L" },
+    { "id": "lime-fresh",       "name": "Fresh Limes",              "category": "produce",   "unit": "case",   "par": 3,  "current_qty": 1,  "supplier_sku": "PRD-LIM-CS" },
+    { "id": "lemon-fresh",      "name": "Fresh Lemons",             "category": "produce",   "unit": "case",   "par": 3,  "current_qty": 3,  "supplier_sku": "PRD-LEM-CS" },
+    { "id": "olives-castel",    "name": "Castelvetrano Olives 2kg", "category": "garnish",   "unit": "tub",    "par": 4,  "current_qty": 2,  "supplier_sku": "GAR-OLV-2K" },
+    { "id": "coffee-beans",     "name": "Espresso Beans 1kg",       "category": "dry-goods", "unit": "bag",    "par": 8,  "current_qty": 2,  "supplier_sku": "DRY-ESP-1K" },
+    { "id": "napkins-cocktail", "name": "Cocktail Napkins 500ct",   "category": "supplies",  "unit": "pack",   "par": 10, "current_qty": 11, "supplier_sku": "SUP-NAP-500" }
+  ]
+}

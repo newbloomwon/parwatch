@@ -1,0 +1,25 @@
+# Secrets — NEVER commit these
+.env
+agent/.env
+**/.env
+*.key
+
+# Agent runtime artifacts
+.memory.jsonl
+agent/.memory.jsonl
+nudge.mp3
+agent/nudge.mp3
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Claude tooling (not part of the project)
+.agents/
+.claude/
+skills-lock.json

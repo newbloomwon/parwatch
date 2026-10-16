@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BoroughBev Supply — Wholesale Bar &amp; Kitchen</title>
+<style>
+  :root { --bg:#0f1115; --card:#181b22; --line:#262b35; --ink:#e8ebf0; --muted:#9aa4b2; --ok:#3fbf7f; --bad:#e5604d; --accent:#6ea8fe; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:20px 24px; border-bottom:1px solid var(--line); display:flex; align-items:baseline; gap:12px; }
+  header h1 { font-size:18px; margin:0; }
+  header .tag { color:var(--muted); font-size:13px; }
+  main { padding:24px; max-width:960px; margin:0 auto; }
+  table { width:100%; border-collapse:collapse; }
+  th,td { text-align:left; padding:12px 14px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+  .sku { color:var(--muted); font-family:ui-monospace,Menlo,monospace; font-size:13px; }
+  .price { font-weight:700; }
+  .stock { font-weight:600; }
+  .in { color:var(--ok); }
+  .out { color:var(--bad); }
+  footer { color:var(--muted); font-size:12px; padding:16px 24px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<header>
+  <h1>BoroughBev Supply</h1>
+  <span class="tag">Wholesale bar &amp; kitchen · NYC · prices per unit, excl. tax</span>
+</header>
+<main>
+  <p class="tag">Live catalog — prices and availability update daily.</p>
+  <table id="catalog">
+    <thead>
+      <tr><th>Product</th><th>SKU</th><th>Unit</th><th>Price</th><th>Availability</th></tr>
+    </thead>
+    <tbody>
+      <!-- data-* attributes mirror the visible text for easy, robust scraping -->
+      <tr data-sku="SPR-RYE-750" data-price="21.50" data-stock="in">
+        <td>Rye Whiskey 750ml</td><td class="sku">SPR-RYE-750</td><td>bottle</td>
+        <td class="price">$21.50</td><td class="stock in">In stock</td></tr>
+      <tr data-sku="SPR-GIN-750" data-price="18.00" data-stock="in">
+        <td>London Dry Gin 750ml</td><td class="sku">SPR-GIN-750</td><td>bottle</td>
+        <td class="price">$18.00</td><td class="stock in">In stock</td></tr>
+      <tr data-sku="SPR-VER-1L" data-price="12.75" data-stock="in">
+        <td>Sweet Vermouth 1L</td><td class="sku">SPR-VER-1L</td><td>bottle</td>
+        <td class="price">$12.75</td><td class="stock in">In stock</td></tr>
+      <tr data-sku="MIX-TON-200" data-price="0.65" data-stock="in">
+        <td>Tonic Water 200ml</td><td class="sku">MIX-TON-200</td><td>bottle</td>
+        <td class="price">$0.65</td><td class="stock in">In stock</td></tr>
+      <tr data-sku="MIX-SOD-1L" data-price="1.40" data-stock="in">
+        <td>Club Soda 1L</td><td class="sku">MIX-SOD-1L</td><td>bottle</td>
+        <td class="price">$1.40</td><td class="stock in">In stock</td></tr>
+      <tr data-sku="PRD-LIM-CS" data-price="28.00" data-stock="in">
+        <td>Fresh Limes (case)</td><td class="sku">PRD-LIM-CS</td><td>case</td>
+        <td class="price">$28.00</td><td class="stock in">In stock</td></tr>
+      <tr data-sku="PRD-LEM-CS" data-price="26.50" data-stock="in">
+        <td>Fresh Lemons (case)</td><td class="sku">PRD-LEM-CS</td><td>case</td>
+        <td class="price">$26.50</td><td class="stock in">In stock</td></tr>
+      <tr data-sku="GAR-OLV-2K" data-price="19.90" data-stock="out">
+        <td>Castelvetrano Olives 2kg</td><td class="sku">GAR-OLV-2K</td><td>tub</td>
+        <td class="price">$19.90</td><td class="stock out">Out of stock</td></tr>
+      <tr data-sku="DRY-ESP-1K" data-price="24.00" data-stock="in">
+        <td>Espresso Beans 1kg</td><td class="sku">DRY-ESP-1K</td><td>bag</td>
+        <td class="price">$24.00</td><td class="stock in">In stock</td></tr>
+      <tr data-sku="SUP-NAP-500" data-price="8.25" data-stock="in">
+        <td>Cocktail Napkins 500ct</td><td class="sku">SUP-NAP-500</td><td>pack</td>
+        <td class="price">$8.25</td><td class="stock in">In stock</td></tr>
+    </tbody>
+  </table>
+</main>
+<footer>BoroughBev Supply — mock supplier page for demo use. Not a real vendor.</footer>
+</body>
+</html>
