@@ -77,8 +77,10 @@ def recall(query, k=5):
         out = []
         for h in hits:
             out.append(h.get("text") if isinstance(h, dict) else str(h))
-        # Drop any throwaway test facts so the demo recall stays clean.
-        out = [t for t in out if t and "test order" not in t.lower()]
+        # Keep only our canonical order facts so the demo recall stays clean —
+        # the memory service also stores inferred/derived snippets we don't want
+        # to surface (test facts, entity-extraction fragments, scoped copies).
+        out = [t for t in out if t and t.strip().startswith("Approved restock order")]
         return out[:k]
     except Exception as e:  # noqa: BLE001
         print(f"[memory] recall failed ({e}).")
